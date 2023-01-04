@@ -22,7 +22,7 @@ Route::get('/beranda', function () {
 Route::get('peserta/data_peserta', function () {
     return view('peserta/data_peserta');
 }); 
-Route::get('peserta/create_data_peserta', function () {
-    return view('peserta/create_data_peserta');
-}); 
+// Route::get('pese rta/create_data_peserta', function () {
+//     return view('peserta/create_data_peserta');
+// }); 
 
