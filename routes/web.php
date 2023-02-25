@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers as C;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,15 +15,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->to('registrasi');
 });
-Route::get('/beranda', function () {
-    return view('beranda');
+
+Route::get('/halamanutama', function () {
+    return view('halamanutama');
 });
-Route::get('peserta/data_peserta', function () {
-    return view('peserta/data_peserta');
-}); 
-Route::get('pese rta/create_data_peserta', function () {
-    return view('peserta/create_data_peserta');
-}); 
+
+Route::post('registrasi/caridata', [C\RegistrasiController::class, 'cariData'])->name('registrasi.caridata');
+Route::resource('registrasi', C\RegistrasiController::class);
+Route::resource('cari', C\CariController::class);
+
+Route::get('login',[C\LoginController::class, 'login']);
+Route::post('login',[C\LoginController::class, 'actionlogin']);
+
+//memberitahukan sebelum masuk ke menu beranda
+Route::middleware('auth')->group(function(){
+    Route::get('/berandaevent', function () {
+        return view('berandaevent');
+    });
+    
+    Route::resource('peserta', C\PesertaController::class);
+    Route::resource('daftarevent', C\DaftarEventController::class);
+    Route::resource('kategorikelas', C\KategoriKelasController::class);
+    Route::resource('pendaftaranpeserta', C\PendaftaranPesertaController::class);
+    Route::resource('registrasiulang', C\RegistrasiUlangController::class);
+    Route::get('logout', [C\LoginController::class, 'actionLogout']);
+});
+
+
+
 

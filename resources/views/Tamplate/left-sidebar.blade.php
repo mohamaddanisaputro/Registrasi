@@ -1,29 +1,29 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="berandaevent">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Admin Registrasi<sup>2</sup></div>
     </a>
 
     <!-- Divider -->
     <hr class="sidebar-divider my-0">
 
     <!-- Nav Item - Dashboard -->
-    <li class="nav-item">
-        <a class="nav-link" href="/beranda">
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="berandaevent">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
-    </li>
+    </li>    --}}
 
     <!-- Divider -->
     <hr class="sidebar-divider">
 
   
     <!-- Nav Item - Pages Collapse Menu -->
-    <li class="nav-item ">
+    {{-- <li class="nav-item ">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
             aria-controls="collapsePages">
             <i class="fas fa-fw fa-folder"></i>
@@ -42,21 +42,43 @@
                 <a class="collapse-item " href="blank.html">Blank Page</a>
             </div>
         </div>
-    </li>
+    </li> --}}
 
     <!-- Nav Item - Charts -->
-    <li class="nav-item">
-        <a class="nav-link" href="{{ asset('/peserta/data_peserta') }}">
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="{{ route('peserta.index') }}">
             <i class="fas fa-fw fa-users"></i>
-            <span>Data Peserta</span></a>
+            <span>Master Data Peserta</span></a>
+    </li> --}}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('daftarevent.index') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Master Daftar Event</span></a>
+    </li>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('kategorikelas.index') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Master Daftar Kategori kelas</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('pendaftaranpeserta.index') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Master Pendaftaran peserta </span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('registrasiulang.index') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Master Registrasi Ulang    </span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url('logout') }}">
+            <i class="fas fa-fw fa-users"></i>
+            <span>logout    </span></a>
     </li>
 
     <!-- Nav Item - Tables -->
-    <li class="nav-item">
-        <a class="nav-link" href="tables.html">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span></a>
-    </li>
+    
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

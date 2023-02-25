@@ -26,12 +26,12 @@
 
     <!-- Nav Item - Alerts -->
     <li class="nav-item dropdown no-arrow mx-1">
-        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+        {{-- <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-bell fa-fw"></i>
             <!-- Counter - Alerts -->
             <span class="badge badge-danger badge-counter">3+</span>
-        </a>
+        </a> --}}
         <!-- Dropdown - Alerts -->
         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
             aria-labelledby="alertsDropdown">
@@ -77,12 +77,12 @@
 
     <!-- Nav Item - Messages -->
     <li class="nav-item dropdown no-arrow mx-1">
-        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+        {{-- <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-envelope fa-fw"></i>
             <!-- Counter - Messages -->
             <span class="badge badge-danger badge-counter">7</span>
-        </a>
+        </a> --}}
         <!-- Dropdown - Messages -->
         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
             aria-labelledby="messagesDropdown">
@@ -91,7 +91,7 @@
             </h6>
             <a class="dropdown-item d-flex align-items-center" href="#">
                 <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="{{ asset('Tamplate/img/undraw_profile_1.svg') }}"
+                    <img class="rounded-circle" src="{{ asset('TamplateDepan/TamplateDepan/Tamplate/img/undraw_profile_1.svg') }}"
                         alt="...">
                     <div class="status-indicator bg-success"></div>
                 </div>
@@ -103,7 +103,7 @@
             </a>
             <a class="dropdown-item d-flex align-items-center" href="#">
                 <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="{{ asset('Tamplate/img/undraw_profile_2.svg') }}"
+                    <img class="rounded-circle" src="{{ asset('TamplateDepan/Tamplate/img/undraw_profile_2.svg') }}"
                         alt="...">
                     <div class="status-indicator"></div>
                 </div>
@@ -115,7 +115,7 @@
             </a>
             <a class="dropdown-item d-flex align-items-center" href="#">
                 <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="{{ asset('Tamplate/img/undraw_profile_3.svg') }}"
+                    <img class="rounded-circle" src="{{ asset('TamplateDepan/Tamplate/img/undraw_profile_3.svg') }}"
                         alt="...">
                     <div class="status-indicator bg-warning"></div>
                 </div>
@@ -127,7 +127,7 @@
             </a>
             <a class="dropdown-item d-flex align-items-center" href="#">
                 <div class="dropdown-list-image mr-3">
-                    <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                    <img class="rounded-circle" src="{{ asset('Tamplate/https://source.unsplash.com/Mv9hjnEUHR4/60x60') }}"
                         alt="...">
                     <div class="status-indicator bg-success"></div>
                 </div>
@@ -144,7 +144,7 @@
     <div class="topbar-divider d-none d-sm-block"></div>
 
     <!-- Nav Item - User Information -->
-    <li class="nav-item dropdown no-arrow">
+    {{-- <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
@@ -172,7 +172,7 @@
                 Logout
             </a>
         </div>
-    </li>
+    </li> --}}
 
 </ul>
 
